@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Inconsolata:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+   
+
+}
+.background{
+    background: url(../img/nasa-Q1p7bh3SHj8-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+   
+}
+.logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.logo img{
+    width: 30%;
+}
+   
+.nav-list{
+width: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+/* background-color: black; */
+}
+.nav-list li {
+    padding: 15px 24px;
+    font-size: 20px;
+    list-style: none;
+    
+}
+.nav-list li a{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-list li a:hover{
+    color: white;
+   
+    
+}
+
+.rightNav{
+    
+    width: 10%;
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+    
+   /* -------------header------------------- */
+.box-main{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+max-width: 60%;
+margin: auto;
+height: 80vh;
+   
+   
+
+}
+header{
+    height: 100vh;
+}
+.box-main .small-txt{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+}
+.box-main .lg-txt{
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    font-size: 37px;
+}
+.lg-txt span{
+    color: darkred;
+}
+.first-Half{
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+.first-Half a{
+    text-decoration: none;
+    color: white;
+}
+  
+    
+.btn .btn-cv{
+     border-radius: 4px;
+    padding: 5px;
+   width: 10%;
+   height: 7vh;
+   border: 3px double white;
+}
+
+.second-Half{
+    width: 70%;
+    margin-top: 60px;
+    
+}
+.second-Half img{
+    width: 100%;
+    
+}
+.burger{
+    display: none;
+position: absolute;
+top: 15px;
+right: 5%;
+cursor: pointer;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 4px 3px;
+    border-radius: 20%;
+}
+
+@media  only screen and (max-width:950px) {
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 700px;
+        text-align: center;
+       
+        
+        /* background-size: cover; */
+       
+    }
+    
+    .rightNav{
+        display: none;
+    }
+   
+    .logo{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72%;
+    }
+    .v-class{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
