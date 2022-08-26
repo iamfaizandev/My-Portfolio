@@ -512,7 +512,7 @@ section{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 50%;
+        width: 60%;
         padding-top: 7%;
     }
     .btn-cv-links a{
@@ -560,6 +560,12 @@ section{
         font-family: 'Old Standard TT', serif;
         font-weight: 400;
     }
+    .first-section p{
+      text-align: justify;
+    }
+    .first-section .dp img{
+      margin-left: 0;
+    }
     .second-section .tab-titles{
         display: flex;
         flex-direction: column;
@@ -580,14 +586,11 @@ section{
         padding-left: 0;
       }
       .skills-bar .bar .progress-line {
-        position: relative;
         height: 10px;
-        width: 350px;
-        background: #f0f0f0;
-        border-radius: 10px;
-        transform: scaleY(0);
-        transform-origin: left;
-        animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        width: 270px;
+        
+        
+        
       }
         
 
