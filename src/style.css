@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Josefin+Slab&family=Old+Standard+TT&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Josefin+Slab&family=Old+Standard+TT&family=Overpass+Mono&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -206,8 +206,10 @@ section{
 
 }
 .section-title{
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 38px;
+  font-family: 'Overpass Mono', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
     text-align: center;
     text-shadow: 2px 2px 8px royalblue;
     word-spacing: 3px;
@@ -443,24 +445,24 @@ section{
   }
   
   .card{
-   
     transform: matrix(1, 0, 0.4, 1.1, 0, 1);
     transition: 12s;
-    
-    
   }
+   
   .card:hover{
     transform: matrix(1, 0, 0, 1.1, 0, 1);
     transition: 1s;
   }
+    
+    
   .third-section .card{
     width: 280px;
     height: 280px;
     margin-right: 40px;
-    
-    
     transition: 2s;
   }
+    
+    
   .card-text p {
     font-size: 17px;
     word-spacing: 5px;
@@ -477,6 +479,7 @@ section{
     background: linear-gradient(-229deg,#2E86C1, #4176b2);
     box-shadow: 0px 0px 6px white;
     opacity: 0.9;
+    border: none;
     
     
   }
@@ -484,11 +487,15 @@ section{
   .card:nth-child(2) {
     background: linear-gradient(-229deg,#2E86C1, #4176b2);
     box-shadow: 0px 0px 6px white;
+    opacity: 0.9;
+    border: none;
   }
   
   .card:nth-child(3) {
     background: linear-gradient(-229deg,#2E86C1, #4176b2);
     box-shadow: 0px 0px 6px white;
+    opacity: 0.9;
+    border: none;
   } 
    
     /* ============================== */
@@ -528,7 +535,7 @@ section{
     .layer{
       width: 83%;
       height: 0;
-      background: linear-gradient(rgba(0,0,0,0.5),#85C1E9);
+      background: linear-gradient(rgba(19, 138, 223, 0.5),#85C1E9);
       border-radius: 10px;
       position: absolute;
       left: 0;
@@ -608,10 +615,87 @@ section{
     color:white;
    }
 
+   /* ============================== */
+    /*        CONTACT SECTION */
+    /* ============================== */
+   .contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   }
+   .contact-form{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin-top: 5%;
+   }
+   .form-header{
+    color: white;
+    font-family: 'Vollkorn', serif;
+   }
+   .form-footer button:hover{
+     border: 8px solid white;
+     color: white;
+     background-color: #2E86C1;
+     font-size: 18px;
+      
+    }
+    .form-footer button{
+      width: 100%;
+      height: 8vh;  
+      border-radius: 4px;
+      border: 0px solid white;
+      color: white;
+      font-size: 22px;
+      background-color: #0c2332;
+    }
+    .contact-form .map iframe{
+      margin-left: 10%;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .contact-form ::placeholder{
+      font-size: 16px;
+      font-family: 'Arial Narrow';
+      letter-spacing: 3px;
+      color: black;
+      opacity: 0.5;
+    }
+      
+    /* ============================== */
+    /*        FOOTER SECTION */
+    /* ============================== */
 
-
-
-
+   footer{
+    background:linear-gradient(189deg, #4176b2 55%,#21618C 50%);
+    width: 100%;
+    height: 10vh;
+   }
+   footer p {
+    font-size: 18px;
+    
+   }
+   .footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+   .right span{
+    text-align: right;
+  }
+  .bi-arrow-up-circle{
+    text-align: right;
+    color: white;
+  }
+  
+  .social-icons-resp{
+    display: none;
+  }
+   
+  .back-top{
+    display: none;
+  }
 
 
 
@@ -636,7 +720,7 @@ section{
         flex-direction: column;
         /* background-image: url(../img/WallpaperDog-5533890.jpg); */
         width: 100%;
-        background-color: black;
+        /* background-color: black; */
         opacity: 0.5;
         height: 700px;
     }
@@ -810,7 +894,79 @@ section{
   .social-icons {
     display: none;
   }       
-        
-        
+  
+  
+  /* =========================== */
+           /* CONTACT SECTION */
+   /* =========================== */
+      
+   /* .contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   } */
+   .contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  form{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .map iframe{
+    width: 80%;
+    height: 40vh;
+  
+  }
+  .footer-container{
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    color: white;
+    
+    
+    
+    
+  }
+  footer{
+    background:#21618C;
+    width: 100%;
+    height: 15vh;
+   }
+   .left p {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* display: none; */
+   }
+   .right svg{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: none;
+   }
+   .right span{
+    display: none;
+   }
+   .bi-arrow-up-circle{
+    margin-bottom: 0;
+    display: none;
+    
+   }
+   .social-icons-resp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-icons-resp a{
+    color: white;
+  }
+  
+  .back-top{
+    display: flex;
+    
+  }
+    
+
 
 }
