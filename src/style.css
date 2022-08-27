@@ -869,6 +869,24 @@ section{
          
          
         }
+        .work:hover .layer{
+          height: 100%;
+          transition-delay: 300ms;
+          width: 86%;
+          color: white;
+        }
+        .third-section .card{
+          width: 240px;
+          height: 250px;
+          margin-right: 40px;
+          transition: 2s;
+        }
+        .card-text p {
+          font-size: 16px;
+          word-spacing: 2px;
+          color:white;
+          font-family: Arial, Helvetica, sans-serif;
+        }
 
    /* =========================== */
            /* FORTH SECTION */
@@ -936,7 +954,8 @@ section{
     height: 20vh;
    }
    .left p {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     /* display: none; */
