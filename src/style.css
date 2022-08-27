@@ -867,7 +867,7 @@ section{
         .third-section .card{
           margin-bottom: 40px;
          
-          margin-left: 1%;
+         
         }
 
    /* =========================== */
@@ -933,9 +933,10 @@ section{
   footer{
     background:#21618C;
     width: 100%;
-    height: 15vh;
+    height: 20vh;
    }
    .left p {
+    font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
     /* display: none; */
@@ -957,6 +958,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   .social-icons-resp a{
     color: white;
