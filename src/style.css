@@ -85,11 +85,7 @@ header{
     height: 100vh;
 }
 
-/* .box-main .small-txt {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 100;
-} */
+
 
 .box-main .lg-txt {
     font-family: 'Josefin Slab', serif;
@@ -235,9 +231,11 @@ section{
     flex-wrap:nowrap;
     
     
+    
+    
 }
 .first-section img{
-    width: 50%;
+    width: 30%;
     transition: all 2s;
     margin-left: 80px;
     margin-right: 0;
@@ -252,13 +250,14 @@ section{
    
 }
 .first-section img:hover{
-    transform: scale(1.1);
+  margin-top: 25px;
+    transform: scale(1.2);
     filter: grayscale(0%);
     transition: all 2s;
-    padding: 10px;
+    padding: 0px;
 }
 .intro{
-    padding-left: 0;
+    margin-left: -80px;
     margin-top: 40px;
 } 
          /* ================================== */
@@ -440,11 +439,19 @@ section{
   }
   .service-list{
     display: flex;
+    margin-left: 10%;
   }
   
+  .card{
+   
+    transform: matrix(1, 0, 0.4, 1.1, 0, 1);
+    transition: 12s;
+    
+    
+  }
   .card:hover{
-    transform: scale(1.1);
-    transition: 2s;
+    transform: matrix(1, 0, 0, 1.1, 0, 1);
+    transition: 1s;
   }
   .third-section .card{
     width: 280px;
@@ -457,7 +464,7 @@ section{
   .card-text p {
     font-size: 17px;
     word-spacing: 5px;
-    color: black;
+    color:white;
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -467,26 +474,139 @@ section{
   }
   
    .card:nth-child(1) {
-    background: linear-gradient(-229deg, #d1ba0e, #e2e2e2);
+    background: linear-gradient(-229deg,#2E86C1, #4176b2);
     box-shadow: 0px 0px 6px white;
+    opacity: 0.9;
     
     
   }
   
   .card:nth-child(2) {
-    background: linear-gradient(-229deg, #a48b11, #2c8d82);
+    background: linear-gradient(-229deg,#2E86C1, #4176b2);
     box-shadow: 0px 0px 6px white;
   }
   
   .card:nth-child(3) {
-    background: linear-gradient(-229deg, #e3c00f, #840808);
+    background: linear-gradient(-229deg,#2E86C1, #4176b2);
     box-shadow: 0px 0px 6px white;
   } 
    
-    
+    /* ============================== */
+    /*        FORTH SECTION */
+    /* ============================== */
 
+    .Forth-Section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+   
     
+    .work-list{
+     display: flex; 
+     margin-left: 10%;
+     
+    }
+    
+    .work{
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .work img{
+      width: 250px;
+      margin-right: 70px;
+      height: 14rem;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.5s;
+     opacity: 0.6;
+     
+    }
 
+    .layer{
+      width: 83%;
+      height: 0;
+      background: linear-gradient(rgba(0,0,0,0.5),#85C1E9);
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 40px;
+      text-align: center;
+      font-size: 14px;
+      transition: height 0.5s;
+    
+    }
+    .layer h3{
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .layer a{
+      margin-top: 10px;
+      color: green;
+      text-decoration: none;
+      line-height: 35px;
+      background-color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+    
+    } 
+    .work:hover img{
+      transform: scale(1.1);
+      opacity: 13;
+      
+    }
+    .work:hover .layer{
+      height: 100%;
+      transition-delay: 300ms;
+      width: 83%;
+      color: white;
+    }
+    .btn-link{
+      display: block;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      width: fit-content;
+      border: 1px solid white;
+      padding: 10px 30px;
+      margin-left: 450px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      transition: backrgound 0.5s;
+    
+    }
+    .btn-link:hover{
+      background: hsl(24, 71%, 53%);
+      color: white;
+    }
+
+    /* ============================== */
+    /*        Fifth SECTION */
+    /* ============================== */
+   .social-icons{
+    position:fixed;
+    top: 50%;
+    left: -5%;
+    transform: rotate(90deg);
+   
+   }
+   .social-icons svg{
+    transform: rotate(270deg);
+    color: black;
+   }
+   .social-icons svg:hover{
+    color:white;
+   }
 
 
 
@@ -619,6 +739,9 @@ section{
         font-family: 'Old Standard TT', serif;
         font-weight: 400;
     }
+    .first-section .intro{
+      margin-left: 0;
+    }
     .first-section p{
       text-align: justify;
     }
@@ -659,11 +782,34 @@ section{
         }
         .third-section .card{
           margin-bottom: 40px;
-          margin-right: 10%;
+         
           margin-left: 1%;
         }
-          
-          
+
+   /* =========================== */
+           /* FORTH SECTION */
+   /* =========================== */
+
+   .Forth-Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+ 
+  
+  .work-list{
+   display: flex; 
+   flex-direction: column;
+   
+  }
+  .Forth-Section .work{
+    margin-bottom: 40px;
+  
+    margin-left: 4%;
+  }
+  .social-icons {
+    display: none;
+  }       
         
         
 
