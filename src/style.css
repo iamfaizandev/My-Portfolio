@@ -201,10 +201,13 @@ header{
 /* ===================================== */
 section{
     position: absolute;
-    background: linear-gradient(225deg,skyblue 71%,blue 0%,#4176b2 0%);
-    width: 100%;
-    background-size: cover;
-   
+    
+  }
+  .section-bg{
+  background: linear-gradient(225deg,skyblue 71%,blue 0%,#4176b2 0%);
+  width: 100%;
+  background-size: cover;
+
 }
 .section-title{
     font-family: 'Rajdhani', sans-serif;
@@ -422,8 +425,63 @@ section{
     content: "50%";
     
   } 
-    
 
+
+  /* ================================== */
+           /* THIRD SECTION */
+  /* ================================== */
+    
+  .third-section{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 5%;
+   
+  }
+  .service-list{
+    display: flex;
+  }
+  
+  .card:hover{
+    transform: scale(1.1);
+    transition: 2s;
+  }
+  .third-section .card{
+    width: 280px;
+    height: 280px;
+    margin-right: 40px;
+    
+    
+    transition: 2s;
+  }
+  .card-text p {
+    font-size: 17px;
+    word-spacing: 5px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .skills-heading h4 {
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px  6px rgb(174, 70, 70);
+  }
+  
+   .card:nth-child(1) {
+    background: linear-gradient(-229deg, #d1ba0e, #e2e2e2);
+    box-shadow: 0px 0px 6px white;
+    
+    
+  }
+  
+  .card:nth-child(2) {
+    background: linear-gradient(-229deg, #a48b11, #2c8d82);
+    box-shadow: 0px 0px 6px white;
+  }
+  
+  .card:nth-child(3) {
+    background: linear-gradient(-229deg, #e3c00f, #840808);
+    box-shadow: 0px 0px 6px white;
+  } 
    
     
 
@@ -535,7 +593,8 @@ section{
     }
 
     .logo {
-        display: none;
+       display: none;
+       
     }
 
     .burger {
@@ -589,9 +648,23 @@ section{
         height: 10px;
         width: 270px;
         
-        
-        
       }
+
+      /* ================================= */
+        /* ========Third section======= */
+      /*============================== */
+        .third-section .service-list{
+          display: flex;
+          flex-direction: column;
+        }
+        .third-section .card{
+          margin-bottom: 40px;
+          margin-right: 10%;
+          margin-left: 1%;
+        }
+          
+          
+        
         
 
 }
