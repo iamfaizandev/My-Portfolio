@@ -223,10 +223,24 @@ section{
     
   }
   .section-bg{
-  background: linear-gradient(225deg,skyblue 71%,blue 0%,#4176b2 0%);
+  background: linear-gradient(-45deg,skyblue ,#e73c7e ,#4176b2 ,#9581f4,#23d5ab);
   width: 100%;
   background-size: cover;
+  animation: gradient 2s ease infinite;
+  
 
+
+}
+@keyframes gradient {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 .section-title{
   font-family: 'Overpass Mono', monospace;
@@ -285,6 +299,10 @@ section{
     margin-left: -80px;
     margin-top: 40px;
 } 
+.intro span{
+  color: white;
+  font-size: 22px;
+}
          /* ================================== */
               /* SECOND-SECTION */
          /* ================================== */
@@ -307,7 +325,7 @@ section{
     content: '';
     width: 0;
     height: 4px;
-    background-color: red;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%) ;
     border-radius: 5px;
     position: absolute;
     left: 0;
@@ -315,7 +333,7 @@ section{
     transition: 0.6s;
   }
   .tab-links.active-link::after{
-    width: 60%;
+    width: 80%;
     
   }
   .tab-contents{
@@ -336,7 +354,7 @@ section{
     padding-left: 200px;
   }
   .tab-contents ul li span{
-    color: #D68910 ;
+    color: white ;
     font-weight: bold;
   }
   .skills-bar .bar{
@@ -345,7 +363,7 @@ section{
   .Skill li{
     color: lightyellow;
     word-spacing: 3px;
-    text-shadow: 3px 3px 5px red;
+    text-shadow: 3px 3px 5px gray;
   }
   .skills-bar .bar .info span {
     font-size: 1rem;
@@ -371,7 +389,7 @@ section{
   
   .bar .progress-line span {
     position: absolute;
-    background:linear-gradient(45deg, orange,  rgb(156, 7, 48) 100%);
+    background:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     height: 100%;
     border-radius: 10px;
     transform: scaleY(0);
@@ -657,16 +675,18 @@ section{
     color: white;
     font-family: 'Vollkorn', serif;
    }
-   .form-footer button:hover{
+   .form-footer button{
      border: 8px solid white;
      color: white;
      background-color: #2E86C1;
      font-size: 18px;
+     width: 100%;
+     height: 8vh; 
       
     }
-    .form-footer button{
-      width: 100%;
-      height: 8vh;  
+    .form-footer button:hover{
+      
+      
       border-radius: 4px;
       border: 0px solid white;
       color: white;
@@ -742,10 +762,12 @@ section{
 @media only screen and (max-width:950px) {
     .nav-list {
         flex-direction: column;
-        /* background-image: url(../img/WallpaperDog-5533890.jpg); */
-        width: 100%;
+        background-image: url(../img/Bg-Mobile.gif);
+       background-size: cover;
         /* background-color: black; */
-        opacity: 0.5;
+        width: 100%;
+        
+        
         
         height: 700px;
     }
@@ -770,18 +792,27 @@ section{
       content: '';
       width: 0;
       height: 3px;
-      background:linear-gradient(55deg, #4176b2 85%,  rgb(255, 255, 255) 15%);
+      background:linear-gradient(55deg, #4176b2 ,#e73c7e,  rgb(255, 255, 255));
       border-radius: 10px;
       position: absolute;
       left: 0;
       bottom: -6px;
       transition: 0.5s;
     }
+    .nav-list a{
+      font-size: 18px;
+      transition: 1s;
+         }
     a:hover{
       color: #fff;
+      font-size: 22px;
+      transition: 1s;
+      text-shadow: 1px 1px 6px black;
+      
     }
     .nav-list a:hover::after{
-      width: 65%;
+      width: 85%;
+     
       
     }
 
