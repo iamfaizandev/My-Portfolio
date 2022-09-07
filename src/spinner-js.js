@@ -1,6 +1,4 @@
 function loader (url, loaded) {
-
-  
    var   loading = document.getElementById("loading");
 
   loading.classList.add("load");
