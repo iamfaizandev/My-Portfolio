@@ -15,11 +15,19 @@
   top: 0;
 }
 
-.background {
-  background: url(../img/nasa-Q1p7bh3SHj8-unsplash.jpg);
+/* .background {
+  background: url(../img/Black\ -\ 13495.mp4);
   width: 100%;
   background-size: cover;
 
+} */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -900;
 }
 
 .logo {
@@ -28,11 +36,11 @@
   justify-content: center;
   align-items: center;
 
-
 }
 
-.logo img {
-  width: 30%;
+#Brand-Logo{
+  width: 60%;
+  height: 25%;
 }
 
 .nav-list {
@@ -86,15 +94,16 @@ a:hover {
 .nav-list li a:hover {
   color: white;
 
-
 }
 
-.rightNav {
+.rightNav{
+  display: block;
   width: 10%;
   text-align: right;
-  color: white;
+  color:white;
   font-size: 16px;
   margin-bottom: 16px;
+ 
 }
 
 /* =================================================*/
@@ -114,9 +123,8 @@ a:hover {
 
 header {
   height: 100vh;
+
 }
-
-
 
 .box-main .lg-txt {
   font-family: 'Josefin Slab', serif;
@@ -129,6 +137,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 .container p {
@@ -142,8 +151,8 @@ header {
 }
 
 .container p span.typed-text {
-  font-weight: normal;
-  color: #C4FCFD;
+  font-weight: bold;
+  color: #F7F9F9;
 }
 
 .container p span.cursor {
@@ -217,17 +226,6 @@ header {
   background-color: black;
 }
 
-/* .second-Half{
-    width: 55%;
-    
-
-}
-     
-.second-Half img {
-    width: 100%;
-
-} */
-
 
 .burger {
   display: none;
@@ -259,8 +257,6 @@ section {
   background-size: cover;
   animation: gradient 2s ease infinite;
 
-
-
 }
 
 @keyframes gradient {
@@ -288,7 +284,6 @@ section {
   padding-top: 6vh;
   padding-bottom: 4vh;
 
-
 }
 
 .first-section {
@@ -305,9 +300,6 @@ section {
   display: flex;
   flex-wrap: nowrap;
 
-
-
-
 }
 
 .first-section img {
@@ -318,11 +310,9 @@ section {
   filter: grayscale(100%);
   padding: 5px;
   height: 100%;
-  border-top: 6px double red;
-  border-right: 6px double red;
-  border-left: 10px double black;
-  border-bottom: 10px double black;
+  border: 2px solid gray;
   border-radius: 5px;
+  transition: 3s;
 
 }
 
@@ -330,8 +320,12 @@ section {
   margin-top: 25px;
   transform: scale(1.2);
   filter: grayscale(0%);
-  transition: all 2s;
+  transition:  4s;
   padding: 0px;
+  border-top: 6px double red;
+  border-right: 6px double red;
+  border-left: 10px double black;
+  border-bottom: 10px double black;
 }
 
 .intro {
@@ -564,14 +558,12 @@ section {
   transition: 1s;
 }
 
-
 .third-section .card {
   width: 280px;
   height: 280px;
   margin-right: 40px;
   transition: 2s;
 }
-
 
 .card-text p {
   font-size: 17px;
@@ -590,7 +582,6 @@ section {
   box-shadow: 0px 0px 6px white;
   opacity: 0.9;
   border: none;
-
 
 }
 
@@ -617,7 +608,6 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 
 .work-list {
   display: flex;
@@ -802,8 +792,6 @@ section {
 }
 
 .form-footer button:hover {
-
-
   border-radius: 4px;
   border: 0px solid white;
   color: white;
@@ -864,34 +852,40 @@ footer p {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =======================================================================================================================  */
+/* =======================================================================================================================  */
+/* =======================================================================================================================  */
+/* =======================================================================================================================  */
+  
 
 @media only screen and (max-width:950px) {
   .nav-list {
     flex-direction: column;
-    background-image: url(../img/Bg-Mobile.gif);
+    padding-bottom: 45%;
+    padding-right: 15%;
+
+    
+  
+  }
+  .navbar{
+    background-image: url(../img/Mobile-Size-Bg.jpg);
+    position: sticky;
+    top: 0;
+    padding: 0;
     background-size: cover;
     /* background-color: black; */
     width: 100%;
-    height: 700px;
-
+    height:850px;
   }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -900;
+  }
+  
 
   .box-main {
     max-width: 100%;
@@ -908,8 +902,9 @@ footer p {
   nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 26px;
-    position: relative;
+    font-size: 30px;
+   
+    
   }
 
   .nav-list a::after {
@@ -931,7 +926,7 @@ footer p {
 
   a:hover {
     color: #fff;
-    font-size: 22px;
+    font-size: 26px;
     transition: 1s;
     text-shadow: 1px 1px 6px black;
 
@@ -939,7 +934,6 @@ footer p {
 
   .nav-list a:hover::after {
     width: 85%;
-
 
   }
 
@@ -1035,10 +1029,12 @@ footer p {
     flex-direction: column;
     font-family: 'Old Standard TT', serif;
     font-weight: 400;
+    
   }
 
   .first-section .intro {
     margin-left: 0;
+    
   }
 
   .first-section p {
