@@ -5,7 +5,9 @@
   margin: 0;
   padding: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -152,7 +154,7 @@ header {
 
 .container p span.typed-text {
   font-weight: bold;
-  color: #F7F9F9;
+  color: #fff;
 }
 
 .container p span.cursor {
@@ -191,6 +193,7 @@ header {
 
 .lg-txt span {
   color: #2E86C1;
+  
 }
 
 .first-Half {
@@ -819,8 +822,8 @@ section {
 
 footer {
   background: linear-gradient(189deg, #4176b2 55%, #21618C 50%);
-  width: 100%;
-  height: 10vh;
+  /* width: 100%;
+  height: 10vh; */
 }
 
 footer p {
