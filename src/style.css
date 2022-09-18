@@ -17,12 +17,7 @@ html{
   top: 0;
 }
 
-/* .background {
-  background: url(../img/Black\ -\ 13495.mp4);
-  width: 100%;
-  background-size: cover;
 
-} */
 #myVideo {
   position: fixed;
   right: 0;
@@ -50,7 +45,7 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
+ 
 }
 
 nav ul li a {
