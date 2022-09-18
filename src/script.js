@@ -83,3 +83,19 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 
 
 
+
+//const form = document.getElementById("Form-Message").value;
+// const email = document.getElementById("email").value;
+// const contact = document.getElementById("contact").value;
+// const txtmsg = document.getElementById("txtMsg").value;
+
+//  onsubmit = e =>{
+//   fetch()
+//   .then(response =>{
+//     txtmsg.innerHTML = "Message Sent Successfully"
+//     setTimeout(function(){
+//       txtmsg.innerHTML=""
+//     },3000)
+//     form.reset()
+//   })
+// };
